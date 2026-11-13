@@ -8,13 +8,24 @@ This project was developed as part of a [Frontend Mentor](https://www.frontendme
 
 The Browser Extension Manager allows users to manage a collection of browser extensions through a clean and user-friendly interface.
 
+
+
 ## Screenshots
 
-### Desktop Preview
-![Desktop Dark Theme](./screenshots/desktop-dark.png)
+<details>
+<summary>View Desktop Screenshot</summary>
 
-### Mobile Preview
-![Mobile Dark Theme](./screenshots/mobile-dark.png)
+<img src="./screenshots/desktop-dark.png" alt="Desktop dark theme" width="500">
+
+</details>
+
+<details>
+<summary>View Mobile Screenshot</summary>
+
+<img src="./screenshots/mobile-dark.png" alt="Mobile dark theme" width="180">
+
+</details>
+
 
 ### Features
 
