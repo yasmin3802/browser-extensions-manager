@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Manage, organize, and control your browser extensions.">
+
+    <title>Extensions Manager</title>
+
+    <link rel="icon" type="image/png" href="./assets/images/favicon-32x32.png">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+
+    <main class="app-shell">
+
+        <header class="topbar">
+
+            <a href="#" class="brand" aria-label="Extensions Manager Home">
+                <img
+                    src="./assets/images/logo.svg"
+                    alt="Extensions Manager"
+                    class="brand-logo"
+                    id="brand-logo"
+                >
+            </a>
+
+            <button
+                class="theme-toggle"
+                id="theme-toggle"
+                type="button"
+                aria-label="Switch to dark theme"
+            >
+                <img src="./assets/images/icon-moon.svg" alt="" id="theme-icon">
+            </button>
+
+        </header>
+
+        <section class="extensions-section" aria-labelledby="page-title">
+
+            <div class="section-heading">
+
+                <h1 id="page-title">Extensions List</h1>
+
+                <div class="filter-controls" role="group" aria-label="Filter extensions">
+
+                    <button
+                        class="filter-button is-selected"
+                        type="button"
+                        data-filter="all"
+                        aria-pressed="true"
+                    >
+                        All
+                    </button>
+
+                    <button
+                        class="filter-button"
+                        type="button"
+                        data-filter="active"
+                        aria-pressed="false"
+                    >
+                        Active
+                    </button>
+
+                    <button
+                        class="filter-button"
+                        type="button"
+                        data-filter="inactive"
+                        aria-pressed="false"
+                    >
+                        Inactive
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="extensions-grid" id="extensions-grid" aria-live="polite" aria-busy="true">
+
+                <p class="loading-message">Loading extensions...</p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="attribution">
+
+        Challenge by
+        <a href="https://www.frontendmentor.io/" target="_blank" rel="noopener noreferrer">
+            Frontend Mentor
+        </a>.
+
+        Coded by
+        <a href="#" target="_blank">
+            Yasmin Sherefa
+        </a>.
+
+    </footer>
+
+    <dialog
+        class="confirm-dialog"
+        id="confirm-dialog"
+        aria-labelledby="dialog-title"
+        aria-describedby="dialog-description"
+    >
+
+        <div class="dialog-content">
+
+            <h2 id="dialog-title">Remove extension?</h2>
+
+            <p id="dialog-description">
+                This extension will be removed from your list.
+            </p>
+
+            <div class="dialog-actions">
+
+                <button class="dialog-button cancel-button" id="cancel-remove" type="button">
+                    Cancel
+                </button>
+
+                <button class="dialog-button confirm-button" id="confirm-remove" type="button">
+                    Remove
+                </button>
+
+            </div>
+
+        </div>
+
+    </dialog>
+
+</body>
+</html>
